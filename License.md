@@ -6,8 +6,7 @@ in the Software without restriction only for educational purposes, including wit
 to use, copy, modify, merge and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-For any kind of commericial usage including publishing, distribute, sublicense, and/or sell
-copies of the Software please contact the author of this repo for pemission at the above mentioned email address. 
+Any kind of commericial usage of this Software is prohibited please contact the author of this repo for pemission at the above mentioned email address. 
 
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
