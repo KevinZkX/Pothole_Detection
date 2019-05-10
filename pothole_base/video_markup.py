@@ -28,7 +28,6 @@ from pytesseract import *
 
 sys.path.insert(0,'./pothole') #Relative import
 import pothole
-import GetCoordinates
 from mrcnn import utils
 from mrcnn import visualize
 from mrcnn.visualize import display_images
