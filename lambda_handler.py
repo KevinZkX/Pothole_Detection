@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import io
 import boto3
@@ -67,11 +68,11 @@ def handle_lambda(event,context,called_local=False):
     
     #1/  GET S3 file creation event
     #############################################################333
-    print ("EVENT: "+str(event))
+    print("EVENT: "+str(event))
     bucket_name = event['Records'][0]['s3']['bucket']['name']
     key = urllib.unquote_plus(event['Records'][0]['s3']['object']['key'])
-    print "Using bucket name: "+bucket_name
-    print "Using key: "+key
+    print("Using bucket name: "+bucket_name)
+    print("Using key: "+key)
     
     if not re.search(r'_output\.',key):
         #2/  Call sagemaker endpoint invocation
@@ -82,13 +83,13 @@ def handle_lambda(event,context,called_local=False):
         payload['input']['s3_bucket']=bucket_name
         payload['input']['is_live']=False
     
-        print ("Calling endpoint...")
+        print("Calling endpoint...")
         response = runtime.invoke_endpoint(EndpointName=ENDPOINT_NAME, ContentType='application/json', Body=json.dumps(payload))
-        print ("RESPONSE:")
+        print("RESPONSE:")
         print(response)
         #result = json.loads(response['Body'].read().decode())
     else:
-        print ("New file appears like output: _output -- skipping: "+str(key))
+        print("New file appears like output: _output -- skipping: "+str(key))
     return "Standard response"
 
 
