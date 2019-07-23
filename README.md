@@ -7,6 +7,9 @@
 # General Flow
 ![general flow](https://s3.amazonaws.com/wildrydes-yash-chakka/General_Flow.png)
 
+# Video Output
+![output](https://user-images.githubusercontent.com/23339145/61751864-b7ed3380-ad77-11e9-9530-a4558c9510b5.gif)
+
 # Pothole-deployments
 Deployment environment for pothole detection system
 
